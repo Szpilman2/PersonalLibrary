@@ -21,3 +21,5 @@ C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\Person
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_find_form.resources
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.about_us_form.resources
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.software_help_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\bin\Debug\Library_Database.mdf
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\bin\Debug\Library_Database_log.ldf
