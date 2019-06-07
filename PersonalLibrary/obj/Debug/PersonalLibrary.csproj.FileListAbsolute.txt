@@ -1,0 +1,9 @@
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\bin\Debug\PersonalLibrary.exe.config
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\bin\Debug\PersonalLibrary.exe
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\bin\Debug\PersonalLibrary.pdb
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.main_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.Properties.Resources.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.csproj.GenerateResource.Cache
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.exe
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.pdb
