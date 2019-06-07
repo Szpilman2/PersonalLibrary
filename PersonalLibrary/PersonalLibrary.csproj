@@ -46,16 +46,112 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="book_add_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_add_form.Designer.cs">
+      <DependentUpon>book_add_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book_delete_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_delete_form.Designer.cs">
+      <DependentUpon>book_delete_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book_edit_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_edit_form.Designer.cs">
+      <DependentUpon>book_edit_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book_find_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_find_form.Designer.cs">
+      <DependentUpon>book_find_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="music_add_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="music_add_form.Designer.cs">
+      <DependentUpon>music_add_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="music_delete_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="music_delete_form.Designer.cs">
+      <DependentUpon>music_delete_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="music_edit_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="music_edit_form.Designer.cs">
+      <DependentUpon>music_edit_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="music_find_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="music_find_form.Designer.cs">
+      <DependentUpon>music_find_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="video_add_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="video_add_form.Designer.cs">
+      <DependentUpon>video_add_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="video_delete_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="video_delete_form.Designer.cs">
+      <DependentUpon>video_delete_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="video_edit_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="video_edit_form.Designer.cs">
+      <DependentUpon>video_edit_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="video_find_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="video_find_form.Designer.cs">
+      <DependentUpon>video_find_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="book_add_form.resx">
+      <DependentUpon>book_add_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_delete_form.resx">
+      <DependentUpon>book_delete_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_edit_form.resx">
+      <DependentUpon>book_edit_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_find_form.resx">
+      <DependentUpon>book_find_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="music_add_form.resx">
+      <DependentUpon>music_add_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="music_delete_form.resx">
+      <DependentUpon>music_delete_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="music_edit_form.resx">
+      <DependentUpon>music_edit_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="music_find_form.resx">
+      <DependentUpon>music_find_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +162,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="video_add_form.resx">
+      <DependentUpon>video_add_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="video_delete_form.resx">
+      <DependentUpon>video_delete_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="video_edit_form.resx">
+      <DependentUpon>video_edit_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="video_find_form.resx">
+      <DependentUpon>video_find_form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

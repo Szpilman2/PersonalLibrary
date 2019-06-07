@@ -7,3 +7,15 @@ C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\Person
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.csproj.GenerateResource.Cache
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.exe
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.pdb
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.book_add_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.book_delete_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.book_edit_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.book_find_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.music_add_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.music_delete_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.music_edit_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.music_find_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_add_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_delete_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_edit_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_find_form.resources
