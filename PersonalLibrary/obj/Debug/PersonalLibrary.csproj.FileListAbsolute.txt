@@ -19,3 +19,5 @@ C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\Person
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_delete_form.resources
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_edit_form.resources
 C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.video_find_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.about_us_form.resources
+C:\Users\Peyman Shabani\Desktop\PersonalLibrary\PersonalLibrary\obj\Debug\PersonalLibrary.software_help_form.resources

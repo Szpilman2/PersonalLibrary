@@ -81,24 +81,28 @@
             this.book_add.Name = "book_add";
             this.book_add.Size = new System.Drawing.Size(181, 26);
             this.book_add.Text = "افزودن";
+            this.book_add.Click += new System.EventHandler(this.book_add_Click);
             // 
             // book_edit
             // 
             this.book_edit.Name = "book_edit";
             this.book_edit.Size = new System.Drawing.Size(181, 26);
             this.book_edit.Text = "ویرایش";
+            this.book_edit.Click += new System.EventHandler(this.book_edit_Click);
             // 
             // book_find
             // 
             this.book_find.Name = "book_find";
             this.book_find.Size = new System.Drawing.Size(181, 26);
             this.book_find.Text = "جستجو";
+            this.book_find.Click += new System.EventHandler(this.book_find_Click);
             // 
             // book_delete
             // 
             this.book_delete.Name = "book_delete";
             this.book_delete.Size = new System.Drawing.Size(181, 26);
             this.book_delete.Text = "حذف";
+            this.book_delete.Click += new System.EventHandler(this.book_delete_Click);
             // 
             // music_tab
             // 
@@ -116,24 +120,28 @@
             this.music_add.Name = "music_add";
             this.music_add.Size = new System.Drawing.Size(181, 26);
             this.music_add.Text = "افزودن";
+            this.music_add.Click += new System.EventHandler(this.music_add_Click);
             // 
             // music_edit
             // 
             this.music_edit.Name = "music_edit";
             this.music_edit.Size = new System.Drawing.Size(181, 26);
             this.music_edit.Text = "ویرایش";
+            this.music_edit.Click += new System.EventHandler(this.music_edit_Click);
             // 
             // music_find
             // 
             this.music_find.Name = "music_find";
             this.music_find.Size = new System.Drawing.Size(181, 26);
             this.music_find.Text = "جستجو";
+            this.music_find.Click += new System.EventHandler(this.music_find_Click);
             // 
             // music_delete
             // 
             this.music_delete.Name = "music_delete";
             this.music_delete.Size = new System.Drawing.Size(181, 26);
             this.music_delete.Text = "حذف";
+            this.music_delete.Click += new System.EventHandler(this.music_delete_Click);
             // 
             // video_tab
             // 
@@ -151,36 +159,42 @@
             this.video_add.Name = "video_add";
             this.video_add.Size = new System.Drawing.Size(181, 26);
             this.video_add.Text = "افزودن";
+            this.video_add.Click += new System.EventHandler(this.video_add_Click);
             // 
             // video_edit
             // 
             this.video_edit.Name = "video_edit";
             this.video_edit.Size = new System.Drawing.Size(181, 26);
             this.video_edit.Text = "ویرایش";
+            this.video_edit.Click += new System.EventHandler(this.video_edit_Click);
             // 
             // video_find
             // 
             this.video_find.Name = "video_find";
             this.video_find.Size = new System.Drawing.Size(181, 26);
             this.video_find.Text = "جستجو";
+            this.video_find.Click += new System.EventHandler(this.video_find_Click);
             // 
             // video_delete
             // 
             this.video_delete.Name = "video_delete";
             this.video_delete.Size = new System.Drawing.Size(181, 26);
             this.video_delete.Text = "حذف";
+            this.video_delete.Click += new System.EventHandler(this.video_delete_Click);
             // 
             // software_help_tab
             // 
             this.software_help_tab.Name = "software_help_tab";
             this.software_help_tab.Size = new System.Drawing.Size(123, 24);
             this.software_help_tab.Text = "راهنمای نرم افزار";
+            this.software_help_tab.Click += new System.EventHandler(this.software_help_tab_Click);
             // 
             // about_us_tab
             // 
             this.about_us_tab.Name = "about_us_tab";
             this.about_us_tab.Size = new System.Drawing.Size(74, 24);
             this.about_us_tab.Text = "درباره ما";
+            this.about_us_tab.Click += new System.EventHandler(this.about_us_tab_Click);
             // 
             // main_form
             // 
