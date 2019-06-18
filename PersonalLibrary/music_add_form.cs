@@ -16,5 +16,10 @@ namespace PersonalLibrary
         {
             InitializeComponent();
         }
+
+        private void lbl_music_category_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
