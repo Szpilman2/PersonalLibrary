@@ -16,5 +16,10 @@ namespace PersonalLibrary
         {
             InitializeComponent();
         }
+
+        private void radiobtn_is_read_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
