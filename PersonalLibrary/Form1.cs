@@ -13,11 +13,15 @@ namespace PersonalLibrary
 {
     public partial class main_form : Form
     {
+        SqlConnection conn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        SqlDataAdapter da = new SqlDataAdapter();
+        DataSet ds = new DataSet();
         public main_form()
         {
             InitializeComponent();
         }
-
+        
         private void book_add_Click(object sender, EventArgs e)
         {
             book_add_form book_add = new book_add_form();
@@ -100,6 +104,12 @@ namespace PersonalLibrary
         {
             about_us_form about = new about_us_form();
             about.Show();
+        }
+
+        private void main_form_Load(object sender, EventArgs e)
+        {
+            conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Library_Database.mdf;Integrated Security=True";
+            conn.Open();
         }
     }
 }
