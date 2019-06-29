@@ -16,5 +16,10 @@ namespace PersonalLibrary
         {
             InitializeComponent();
         }
+
+        private void lbl_help2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

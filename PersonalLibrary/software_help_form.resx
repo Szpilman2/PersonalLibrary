@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lbl_help2.Text" xml:space="preserve">
+    <value>با سلام خدمت شما استفاده کننده گرامی از اینکه نرم افزار کتابخانه شخصی را 
+برای مدیریت کتاب ها و مولتی مدیا خود انتخاب کرده اید از شما متشکریم.
+جهت استفاده هر چه آسانتر از این برنامه توصیه می شود این قسمت را تا انتها مطالعه 
+بفرمایید.
+جهت اضافه کردن کتاب موردنظر خود به نرم افزار،کافی است از منو افزودن کتاب را انتخاب 
+کرده و کتاب خود را وارد نمایید. همچنین جهت ویرایش، حذف یا جستجوی کتاب نیز می توانید از منو
+مربوط به آنها اقدام فرمایید.
+همچنین برای موسیقی و فیلم هم به همین روش می توانید عمل کنید. با احترام 
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
