@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Library_DatabaseDataSet1" targetNamespace="http://tempuri.org/Library_DatabaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/Library_DatabaseDataSet1.xsd" xmlns="http://tempuri.org/Library_DatabaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Library_DatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Library_DatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PersonalLibrary.Properties.Settings.GlobalReference.Default.Library_DatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TBLMusicTableAdapter" GeneratorDataComponentClassName="TBLMusicTableAdapter" Name="TBLMusic" UserDataComponentName="TBLMusicTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Library_DatabaseConnectionString (Settings)" DbObjectName="dbo.TBLMusic" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT music_title, music_artist, album_name, music_description, music_genere, muisc_status, music_awards FROM dbo.TBLMusic</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="music_title" DataSetColumn="music_title" />
+              <Mapping SourceColumn="music_artist" DataSetColumn="music_artist" />
+              <Mapping SourceColumn="album_name" DataSetColumn="album_name" />
+              <Mapping SourceColumn="music_description" DataSetColumn="music_description" />
+              <Mapping SourceColumn="music_genere" DataSetColumn="music_genere" />
+              <Mapping SourceColumn="muisc_status" DataSetColumn="muisc_status" />
+              <Mapping SourceColumn="music_awards" DataSetColumn="music_awards" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Library_DatabaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Library_DatabaseDataSet1" msprop:Generator_UserDSName="Library_DatabaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBLMusic" msprop:Generator_TableClassName="TBLMusicDataTable" msprop:Generator_TableVarName="tableTBLMusic" msprop:Generator_TablePropName="TBLMusic" msprop:Generator_RowDeletingName="TBLMusicRowDeleting" msprop:Generator_RowChangingName="TBLMusicRowChanging" msprop:Generator_RowEvHandlerName="TBLMusicRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLMusicRowDeleted" msprop:Generator_UserTableName="TBLMusic" msprop:Generator_RowChangedName="TBLMusicRowChanged" msprop:Generator_RowEvArgName="TBLMusicRowChangeEvent" msprop:Generator_RowClassName="TBLMusicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="music_title" msprop:Generator_ColumnVarNameInTable="columnmusic_title" msprop:Generator_ColumnPropNameInRow="music_title" msprop:Generator_ColumnPropNameInTable="music_titleColumn" msprop:Generator_UserColumnName="music_title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="music_artist" msprop:Generator_ColumnVarNameInTable="columnmusic_artist" msprop:Generator_ColumnPropNameInRow="music_artist" msprop:Generator_ColumnPropNameInTable="music_artistColumn" msprop:Generator_UserColumnName="music_artist">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="album_name" msprop:Generator_ColumnVarNameInTable="columnalbum_name" msprop:Generator_ColumnPropNameInRow="album_name" msprop:Generator_ColumnPropNameInTable="album_nameColumn" msprop:Generator_UserColumnName="album_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="music_description" msprop:Generator_ColumnVarNameInTable="columnmusic_description" msprop:Generator_ColumnPropNameInRow="music_description" msprop:Generator_ColumnPropNameInTable="music_descriptionColumn" msprop:Generator_UserColumnName="music_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="music_genere" msprop:Generator_ColumnVarNameInTable="columnmusic_genere" msprop:Generator_ColumnPropNameInRow="music_genere" msprop:Generator_ColumnPropNameInTable="music_genereColumn" msprop:Generator_UserColumnName="music_genere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="muisc_status" msprop:Generator_ColumnVarNameInTable="columnmuisc_status" msprop:Generator_ColumnPropNameInRow="muisc_status" msprop:Generator_ColumnPropNameInTable="muisc_statusColumn" msprop:Generator_UserColumnName="muisc_status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="music_awards" msprop:Generator_ColumnVarNameInTable="columnmusic_awards" msprop:Generator_ColumnPropNameInRow="music_awards" msprop:Generator_ColumnPropNameInTable="music_awardsColumn" msprop:Generator_UserColumnName="music_awards" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

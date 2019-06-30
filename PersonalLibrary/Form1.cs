@@ -108,8 +108,8 @@ namespace PersonalLibrary
 
         private void main_form_Load(object sender, EventArgs e)
         {
-            conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Library_Database.mdf;Integrated Security=True";
-            conn.Open();
+           // conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Library_Database.mdf;Integrated Security=True";
+           // conn.Open();
         }
     }
 }

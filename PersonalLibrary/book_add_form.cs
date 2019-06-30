@@ -21,5 +21,10 @@ namespace PersonalLibrary
         {
 
         }
+
+        private void btn_add_book_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

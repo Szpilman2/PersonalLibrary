@@ -51,6 +51,7 @@
             this.btn_bookd.TabIndex = 1;
             this.btn_bookd.Text = "حذف کردن";
             this.btn_bookd.UseVisualStyleBackColor = true;
+            this.btn_bookd.Click += new System.EventHandler(this.btn_bookd_Click);
             // 
             // book_delete_form
             // 

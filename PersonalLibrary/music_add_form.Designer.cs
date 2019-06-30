@@ -101,6 +101,7 @@
             this.btn_add_music.TabIndex = 25;
             this.btn_add_music.Text = "افزودن موسیقی";
             this.btn_add_music.UseVisualStyleBackColor = true;
+            this.btn_add_music.Click += new System.EventHandler(this.btn_add_music_Click);
             // 
             // lbl_music_category
             // 

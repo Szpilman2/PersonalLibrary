@@ -152,6 +152,7 @@
             this.btn_add_book.TabIndex = 10;
             this.btn_add_book.Text = "افزودن کتاب";
             this.btn_add_book.UseVisualStyleBackColor = true;
+            this.btn_add_book.Click += new System.EventHandler(this.btn_add_book_Click);
             // 
             // radiobtn_is_read
             // 
