@@ -29,14 +29,8 @@ namespace PersonalLibrary
 
         private void btn_add_music_Click(object sender, EventArgs e)
         {
-            /*
-            conn1.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Application.StartupPath + @"\Library_Database.mdf;Integrated Security=True";
-            conn1.Open();
-            SqlCommand command = new SqlCommand("INSERT INTO TBLMusic VALUES(@MusicID)");
-            command.Connection = conn1;
-            command.Parameters.AddWithValue("MusicID", id);
-            command.ExecuteNonQuery();
-            */
+
+
 
         }
     }

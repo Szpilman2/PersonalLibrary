@@ -112,6 +112,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Library_DatabaseDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Library_DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library_DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Library_DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library_DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Library_DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library_DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Library_DatabaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library_DatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="music_add_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +274,50 @@
     </None>
     <None Include="Library_DatabaseDataSet2.xss">
       <DependentUpon>Library_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet3.xsc">
+      <DependentUpon>Library_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Library_DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Library_DatabaseDataSet3.xss">
+      <DependentUpon>Library_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet4.xsc">
+      <DependentUpon>Library_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Library_DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Library_DatabaseDataSet4.xss">
+      <DependentUpon>Library_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet5.xsc">
+      <DependentUpon>Library_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Library_DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Library_DatabaseDataSet5.xss">
+      <DependentUpon>Library_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet6.xsc">
+      <DependentUpon>Library_DatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Library_DatabaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Library_DatabaseDataSet6.xss">
+      <DependentUpon>Library_DatabaseDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

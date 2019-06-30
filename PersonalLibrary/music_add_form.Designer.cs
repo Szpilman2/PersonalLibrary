@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(music_add_form));
-            this.radiobtn_half_listen = new System.Windows.Forms.RadioButton();
             this.lbl_is_listen = new System.Windows.Forms.Label();
             this.radiobtn_isnot_listen = new System.Windows.Forms.RadioButton();
             this.radiobtn_is_listen = new System.Windows.Forms.RadioButton();
@@ -47,17 +46,6 @@
             this.txtbox_music_awards = new System.Windows.Forms.TextBox();
             this.lbl_music_awards = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // radiobtn_half_listen
-            // 
-            this.radiobtn_half_listen.AutoSize = true;
-            this.radiobtn_half_listen.Location = new System.Drawing.Point(534, 147);
-            this.radiobtn_half_listen.Name = "radiobtn_half_listen";
-            this.radiobtn_half_listen.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radiobtn_half_listen.Size = new System.Drawing.Size(53, 21);
-            this.radiobtn_half_listen.TabIndex = 29;
-            this.radiobtn_half_listen.Text = "نصفه";
-            this.radiobtn_half_listen.UseVisualStyleBackColor = true;
             // 
             // lbl_is_listen
             // 
@@ -226,7 +214,6 @@
             this.ClientSize = new System.Drawing.Size(675, 475);
             this.Controls.Add(this.txtbox_music_awards);
             this.Controls.Add(this.lbl_music_awards);
-            this.Controls.Add(this.radiobtn_half_listen);
             this.Controls.Add(this.lbl_is_listen);
             this.Controls.Add(this.radiobtn_isnot_listen);
             this.Controls.Add(this.radiobtn_is_listen);
@@ -252,8 +239,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton radiobtn_half_listen;
         private System.Windows.Forms.Label lbl_is_listen;
         private System.Windows.Forms.RadioButton radiobtn_isnot_listen;
         private System.Windows.Forms.RadioButton radiobtn_is_listen;

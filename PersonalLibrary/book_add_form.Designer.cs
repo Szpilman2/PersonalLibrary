@@ -205,6 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(675, 475);
+            this.Controls.Add(this.txt_book_description);
             this.Controls.Add(this.radiobtn_half_read);
             this.Controls.Add(this.lbl_is_read);
             this.Controls.Add(this.radiobtn_isnot_read);
@@ -212,7 +213,6 @@
             this.Controls.Add(this.btn_add_book);
             this.Controls.Add(this.lbl_book_category);
             this.Controls.Add(this.combox_book);
-            this.Controls.Add(this.txt_book_description);
             this.Controls.Add(this.lbl_book_description);
             this.Controls.Add(this.txt_book_publish_year);
             this.Controls.Add(this.lbl_publish_year);
@@ -225,6 +225,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن کتاب";
+            this.Load += new System.EventHandler(this.book_add_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
