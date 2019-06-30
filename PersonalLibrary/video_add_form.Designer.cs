@@ -101,6 +101,7 @@
             this.btn_add_movie.TabIndex = 25;
             this.btn_add_movie.Text = "افزودن فیلم";
             this.btn_add_movie.UseVisualStyleBackColor = true;
+            this.btn_add_movie.Click += new System.EventHandler(this.btn_add_movie_Click);
             // 
             // lbl_video_category
             // 
@@ -245,6 +246,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن فیلم";
+            this.Load += new System.EventHandler(this.video_add_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
