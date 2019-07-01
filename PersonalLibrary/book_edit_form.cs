@@ -21,11 +21,19 @@ namespace PersonalLibrary
 
         private void updateTextBoxes()
         {
+            if (dataGridView_book.CurrentRow == null)
+            {
+                MessageBox.Show("first insert something");
+                Close();
+            }
+            else
+            {
 
-            txtbox_edit_ban.Text = (string)dataGridView_book.CurrentRow.Cells[1].Value;
-            txtbox_edit_btn.Text = (string)dataGridView_book.CurrentRow.Cells[2].Value;
-            txtbox_edit_bd.Text = (string)dataGridView_book.CurrentRow.Cells[3].Value;
-            txtbox_edit_byp.Text = (string)dataGridView_book.CurrentRow.Cells[4].Value;
+                txtbox_edit_ban.Text = (string)dataGridView_book.CurrentRow.Cells[1].Value;
+                txtbox_edit_btn.Text = (string)dataGridView_book.CurrentRow.Cells[2].Value;
+                txtbox_edit_bd.Text = (string)dataGridView_book.CurrentRow.Cells[3].Value;
+                txtbox_edit_byp.Text = (string)dataGridView_book.CurrentRow.Cells[4].Value;
+            }
 
         }
 
@@ -43,7 +51,7 @@ namespace PersonalLibrary
             if (dataGridView_book.CurrentRow == null)
             {
                 MessageBox.Show("Not selected anything!");
-                return;
+                Close();
             }
             SqlCommand query = new SqlCommand(@"UPDATE TBLBook SET book_author = @BookAuthor, book_title = @BookTitle, book_description = @BookDescription, year_of_publish = @YearOfPublish WHERE id = @BookID", conn2);
             query.Parameters.AddWithValue("BookAuthor", txtbox_edit_ban.Text);

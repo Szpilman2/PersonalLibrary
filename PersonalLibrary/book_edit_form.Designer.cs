@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(book_edit_form));
             this.dataGridView_book = new System.Windows.Forms.DataGridView();
+            this.tBLbookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.library_DatabaseDataSet7 = new PersonalLibrary.Library_DatabaseDataSet7();
             this.btn_edit_book = new System.Windows.Forms.Button();
             this.lbl_edit_bd = new System.Windows.Forms.Label();
             this.lbl_edit_byear = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.libraryDatabaseDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.library_DatabaseDataSet6 = new PersonalLibrary.Library_DatabaseDataSet6();
             this.libraryDatabaseDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.library_DatabaseDataSet7 = new PersonalLibrary.Library_DatabaseDataSet7();
-            this.tBLbookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tBLbookTableAdapter = new PersonalLibrary.Library_DatabaseDataSet7TableAdapters.TBLbookTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookauthorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,12 +53,12 @@
             this.bookdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearofpublishDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_book)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLbookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseDataSet3BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseDataSet6BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLbookBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView_book
@@ -83,6 +83,16 @@
             this.dataGridView_book.Size = new System.Drawing.Size(519, 477);
             this.dataGridView_book.TabIndex = 0;
             this.dataGridView_book.SelectionChanged += new System.EventHandler(this.dataGridView_OnSelectionChanged);
+            // 
+            // tBLbookBindingSource
+            // 
+            this.tBLbookBindingSource.DataMember = "TBLbook";
+            this.tBLbookBindingSource.DataSource = this.library_DatabaseDataSet7;
+            // 
+            // library_DatabaseDataSet7
+            // 
+            this.library_DatabaseDataSet7.DataSetName = "Library_DatabaseDataSet7";
+            this.library_DatabaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_edit_book
             // 
@@ -179,16 +189,6 @@
             this.libraryDatabaseDataSet6BindingSource.DataSource = this.library_DatabaseDataSet6;
             this.libraryDatabaseDataSet6BindingSource.Position = 0;
             // 
-            // library_DatabaseDataSet7
-            // 
-            this.library_DatabaseDataSet7.DataSetName = "Library_DatabaseDataSet7";
-            this.library_DatabaseDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tBLbookBindingSource
-            // 
-            this.tBLbookBindingSource.DataMember = "TBLbook";
-            this.tBLbookBindingSource.DataSource = this.library_DatabaseDataSet7;
-            // 
             // tBLbookTableAdapter
             // 
             this.tBLbookTableAdapter.ClearBeforeFill = true;
@@ -203,28 +203,28 @@
             // bookauthorDataGridViewTextBoxColumn
             // 
             this.bookauthorDataGridViewTextBoxColumn.DataPropertyName = "book_author";
-            this.bookauthorDataGridViewTextBoxColumn.HeaderText = "book_author";
+            this.bookauthorDataGridViewTextBoxColumn.HeaderText = "نام نویسنده";
             this.bookauthorDataGridViewTextBoxColumn.Name = "bookauthorDataGridViewTextBoxColumn";
             this.bookauthorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // booktitleDataGridViewTextBoxColumn
             // 
             this.booktitleDataGridViewTextBoxColumn.DataPropertyName = "book_title";
-            this.booktitleDataGridViewTextBoxColumn.HeaderText = "book_title";
+            this.booktitleDataGridViewTextBoxColumn.HeaderText = "عنوان کتاب";
             this.booktitleDataGridViewTextBoxColumn.Name = "booktitleDataGridViewTextBoxColumn";
             this.booktitleDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookdescriptionDataGridViewTextBoxColumn
             // 
             this.bookdescriptionDataGridViewTextBoxColumn.DataPropertyName = "book_description";
-            this.bookdescriptionDataGridViewTextBoxColumn.HeaderText = "book_description";
+            this.bookdescriptionDataGridViewTextBoxColumn.HeaderText = "شرح کتاب";
             this.bookdescriptionDataGridViewTextBoxColumn.Name = "bookdescriptionDataGridViewTextBoxColumn";
             this.bookdescriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // yearofpublishDataGridViewTextBoxColumn
             // 
             this.yearofpublishDataGridViewTextBoxColumn.DataPropertyName = "year_of_publish";
-            this.yearofpublishDataGridViewTextBoxColumn.HeaderText = "year_of_publish";
+            this.yearofpublishDataGridViewTextBoxColumn.HeaderText = "سال نشر";
             this.yearofpublishDataGridViewTextBoxColumn.Name = "yearofpublishDataGridViewTextBoxColumn";
             this.yearofpublishDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -250,12 +250,12 @@
             this.Text = "ویرایش کتاب";
             this.Load += new System.EventHandler(this.book_edit_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_book)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLbookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseDataSet3BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseDataSet6BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLbookBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

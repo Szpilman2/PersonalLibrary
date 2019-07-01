@@ -31,11 +31,19 @@ namespace PersonalLibrary
 
         private void updateTextBoxes()
         {
+            if (dataGridView_music.CurrentRow == null)
+            {
+                MessageBox.Show("first insert something");
+                Close();
+            }
+            else
+            {
 
-            txtbox_edit_ma.Text = (string)dataGridView_music.CurrentRow.Cells[2].Value;
-            txtbox_edit_mmt.Text = (string)dataGridView_music.CurrentRow.Cells[1].Value;
-            txtbox_edit_man.Text = (string)dataGridView_music.CurrentRow.Cells[3].Value;
-            txtbox_edit_movied.Text = (string)dataGridView_music.CurrentRow.Cells[4].Value;
+                txtbox_edit_ma.Text = (string)dataGridView_music.CurrentRow.Cells[2].Value;
+                txtbox_edit_mmt.Text = (string)dataGridView_music.CurrentRow.Cells[1].Value;
+                txtbox_edit_man.Text = (string)dataGridView_music.CurrentRow.Cells[3].Value;
+                txtbox_edit_movied.Text = (string)dataGridView_music.CurrentRow.Cells[4].Value;
+            }
 
         }
 

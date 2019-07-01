@@ -21,31 +21,37 @@ namespace PersonalLibrary
 
         private void video_edit_form_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'library_DatabaseDataSet10.TBLVideo' table. You can move, or remove it, as needed.
-            this.tBLVideoTableAdapter.Fill(this.library_DatabaseDataSet10.TBLVideo);
-            updateTextBoxes();
+            
+            
+          
+                // TODO: This line of code loads data into the 'library_DatabaseDataSet10.TBLVideo' table. You can move, or remove it, as needed.
+             this.tBLVideoTableAdapter.Fill(this.library_DatabaseDataSet10.TBLVideo);
+             updateTextBoxes();
             conn2 = tBLVideoTableAdapter.Connection;
             conn2.Open();
+
+
+
         }
         private void updateTextBoxes()
         {
-
-            txtbox_edit_ti.Text = (string)dataGridView_video.CurrentRow.Cells[1].Value;
-            txtbox_edit_d.Text = (string)dataGridView_video.CurrentRow.Cells[2].Value;
-            txtbox_edit_yb.Text = (string)dataGridView_video.CurrentRow.Cells[3].Value;
-            txtbox_edit_aw.Text = (string)dataGridView_video.CurrentRow.Cells[5].Value;
-            txtbox_edit_md.Text = (string)dataGridView_video.CurrentRow.Cells[4].Value;
-
-        }
-
-        private void dataGridView_video_SelectionChanged(object sender, EventArgs e)
-        {
             if (dataGridView_video.CurrentRow == null)
             {
-                return;
+                MessageBox.Show("first insert something");
+                Close();
             }
-            updateTextBoxes();
+            else
+            {
+                txtbox_edit_ti.Text = (string)dataGridView_video.CurrentRow.Cells[1].Value;
+                txtbox_edit_d.Text = (string)dataGridView_video.CurrentRow.Cells[2].Value;
+                txtbox_edit_yb.Text = (string)dataGridView_video.CurrentRow.Cells[3].Value;
+                txtbox_edit_aw.Text = (string)dataGridView_video.CurrentRow.Cells[5].Value;
+                txtbox_edit_md.Text = (string)dataGridView_video.CurrentRow.Cells[4].Value;
+            }
+
         }
+
+     
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
@@ -66,6 +72,17 @@ namespace PersonalLibrary
             MessageBox.Show("Edited Successfuly!");
             this.tBLVideoTableAdapter.Fill(this.library_DatabaseDataSet10.TBLVideo);
 
+        }
+        private void dataGridView_video_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView_video.CurrentRow == null)
+            {
+                return;
+            }
+            else
+            {
+                updateTextBoxes();
+            }
         }
     }
 }
