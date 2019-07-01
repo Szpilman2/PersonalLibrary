@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(video_edit_form));
             this.dataGridView_video = new System.Windows.Forms.DataGridView();
             this.txtbox_edit_ti = new System.Windows.Forms.TextBox();
@@ -41,17 +42,40 @@
             this.lbl_edit_aw = new System.Windows.Forms.Label();
             this.lbl_edit_md = new System.Windows.Forms.Label();
             this.btn_edit = new System.Windows.Forms.Button();
+            this.library_DatabaseDataSet10 = new PersonalLibrary.Library_DatabaseDataSet10();
+            this.tBLVideoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tBLVideoTableAdapter = new PersonalLibrary.Library_DatabaseDataSet10TableAdapters.TBLVideoTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.videotitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.videodirectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.videoyearofbuildDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.videodescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.videoawardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_video)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLVideoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView_video
             // 
+            this.dataGridView_video.AutoGenerateColumns = false;
             this.dataGridView_video.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_video.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView_video.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.videotitleDataGridViewTextBoxColumn,
+            this.videodirectorDataGridViewTextBoxColumn,
+            this.videoyearofbuildDataGridViewTextBoxColumn,
+            this.videodescriptionDataGridViewTextBoxColumn,
+            this.videoawardsDataGridViewTextBoxColumn});
+            this.dataGridView_video.DataSource = this.tBLVideoBindingSource;
+            this.dataGridView_video.Location = new System.Drawing.Point(24, 12);
+            this.dataGridView_video.MultiSelect = false;
             this.dataGridView_video.Name = "dataGridView_video";
             this.dataGridView_video.RowTemplate.Height = 24;
+            this.dataGridView_video.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_video.Size = new System.Drawing.Size(512, 477);
             this.dataGridView_video.TabIndex = 0;
+            this.dataGridView_video.SelectionChanged += new System.EventHandler(this.dataGridView_video_SelectionChanged);
             // 
             // txtbox_edit_ti
             // 
@@ -142,6 +166,58 @@
             this.btn_edit.TabIndex = 11;
             this.btn_edit.Text = "ویرایش کردن";
             this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // library_DatabaseDataSet10
+            // 
+            this.library_DatabaseDataSet10.DataSetName = "Library_DatabaseDataSet10";
+            this.library_DatabaseDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tBLVideoBindingSource
+            // 
+            this.tBLVideoBindingSource.DataMember = "TBLVideo";
+            this.tBLVideoBindingSource.DataSource = this.library_DatabaseDataSet10;
+            // 
+            // tBLVideoTableAdapter
+            // 
+            this.tBLVideoTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // videotitleDataGridViewTextBoxColumn
+            // 
+            this.videotitleDataGridViewTextBoxColumn.DataPropertyName = "video_title";
+            this.videotitleDataGridViewTextBoxColumn.HeaderText = "عنوان فیلم";
+            this.videotitleDataGridViewTextBoxColumn.Name = "videotitleDataGridViewTextBoxColumn";
+            // 
+            // videodirectorDataGridViewTextBoxColumn
+            // 
+            this.videodirectorDataGridViewTextBoxColumn.DataPropertyName = "video_director";
+            this.videodirectorDataGridViewTextBoxColumn.HeaderText = "نام کارگردان";
+            this.videodirectorDataGridViewTextBoxColumn.Name = "videodirectorDataGridViewTextBoxColumn";
+            // 
+            // videoyearofbuildDataGridViewTextBoxColumn
+            // 
+            this.videoyearofbuildDataGridViewTextBoxColumn.DataPropertyName = "video_year_of_build";
+            this.videoyearofbuildDataGridViewTextBoxColumn.HeaderText = "سال ساخت";
+            this.videoyearofbuildDataGridViewTextBoxColumn.Name = "videoyearofbuildDataGridViewTextBoxColumn";
+            // 
+            // videodescriptionDataGridViewTextBoxColumn
+            // 
+            this.videodescriptionDataGridViewTextBoxColumn.DataPropertyName = "video_description";
+            this.videodescriptionDataGridViewTextBoxColumn.HeaderText = "شرح فیلم";
+            this.videodescriptionDataGridViewTextBoxColumn.Name = "videodescriptionDataGridViewTextBoxColumn";
+            // 
+            // videoawardsDataGridViewTextBoxColumn
+            // 
+            this.videoawardsDataGridViewTextBoxColumn.DataPropertyName = "video_awards";
+            this.videoawardsDataGridViewTextBoxColumn.HeaderText = "جوایز دریافتی";
+            this.videoawardsDataGridViewTextBoxColumn.Name = "videoawardsDataGridViewTextBoxColumn";
             // 
             // video_edit_form
             // 
@@ -165,7 +241,10 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "ویرایش فیلم";
+            this.Load += new System.EventHandler(this.video_edit_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_video)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLVideoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +264,14 @@
         private System.Windows.Forms.Label lbl_edit_aw;
         private System.Windows.Forms.Label lbl_edit_md;
         private System.Windows.Forms.Button btn_edit;
+        private Library_DatabaseDataSet10 library_DatabaseDataSet10;
+        private System.Windows.Forms.BindingSource tBLVideoBindingSource;
+        private Library_DatabaseDataSet10TableAdapters.TBLVideoTableAdapter tBLVideoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn videotitleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn videodirectorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn videoyearofbuildDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn videodescriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn videoawardsDataGridViewTextBoxColumn;
     }
 }

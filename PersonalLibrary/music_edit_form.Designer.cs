@@ -28,8 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(music_edit_form));
             this.dataGridView_music = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musictitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musicartistDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.albumnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musicdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musicawardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tBLMusicBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.library_DatabaseDataSet9 = new PersonalLibrary.Library_DatabaseDataSet9();
             this.btn_edit_movie = new System.Windows.Forms.Button();
             this.lbl_movie_d = new System.Windows.Forms.Label();
             this.lbl_maw = new System.Windows.Forms.Label();
@@ -41,17 +50,79 @@
             this.txtbox_edit_maw = new System.Windows.Forms.TextBox();
             this.txtbox_edit_movied = new System.Windows.Forms.TextBox();
             this.txtbox_edit_mmt = new System.Windows.Forms.TextBox();
+            this.tBLMusicTableAdapter = new PersonalLibrary.Library_DatabaseDataSet9TableAdapters.TBLMusicTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_music)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLMusicBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView_music
             // 
+            this.dataGridView_music.AutoGenerateColumns = false;
             this.dataGridView_music.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_music.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.musictitleDataGridViewTextBoxColumn,
+            this.musicartistDataGridViewTextBoxColumn,
+            this.albumnameDataGridViewTextBoxColumn,
+            this.musicdescriptionDataGridViewTextBoxColumn,
+            this.musicawardsDataGridViewTextBoxColumn});
+            this.dataGridView_music.DataSource = this.tBLMusicBindingSource;
             this.dataGridView_music.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView_music.MultiSelect = false;
             this.dataGridView_music.Name = "dataGridView_music";
             this.dataGridView_music.RowTemplate.Height = 24;
+            this.dataGridView_music.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_music.Size = new System.Drawing.Size(494, 477);
             this.dataGridView_music.TabIndex = 0;
+            this.dataGridView_music.SelectionChanged += new System.EventHandler(this.dataGridView_music_SelectionChanged);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // musictitleDataGridViewTextBoxColumn
+            // 
+            this.musictitleDataGridViewTextBoxColumn.DataPropertyName = "music_title";
+            this.musictitleDataGridViewTextBoxColumn.HeaderText = "عنوان موسیقی";
+            this.musictitleDataGridViewTextBoxColumn.Name = "musictitleDataGridViewTextBoxColumn";
+            // 
+            // musicartistDataGridViewTextBoxColumn
+            // 
+            this.musicartistDataGridViewTextBoxColumn.DataPropertyName = "music_artist";
+            this.musicartistDataGridViewTextBoxColumn.HeaderText = "نام خواننده";
+            this.musicartistDataGridViewTextBoxColumn.Name = "musicartistDataGridViewTextBoxColumn";
+            // 
+            // albumnameDataGridViewTextBoxColumn
+            // 
+            this.albumnameDataGridViewTextBoxColumn.DataPropertyName = "album_name";
+            this.albumnameDataGridViewTextBoxColumn.HeaderText = "نام آلبوم";
+            this.albumnameDataGridViewTextBoxColumn.Name = "albumnameDataGridViewTextBoxColumn";
+            // 
+            // musicdescriptionDataGridViewTextBoxColumn
+            // 
+            this.musicdescriptionDataGridViewTextBoxColumn.DataPropertyName = "music_description";
+            this.musicdescriptionDataGridViewTextBoxColumn.HeaderText = "شرح موزیک";
+            this.musicdescriptionDataGridViewTextBoxColumn.Name = "musicdescriptionDataGridViewTextBoxColumn";
+            // 
+            // musicawardsDataGridViewTextBoxColumn
+            // 
+            this.musicawardsDataGridViewTextBoxColumn.DataPropertyName = "music_awards";
+            this.musicawardsDataGridViewTextBoxColumn.HeaderText = "جوایز دریافتی";
+            this.musicawardsDataGridViewTextBoxColumn.Name = "musicawardsDataGridViewTextBoxColumn";
+            // 
+            // tBLMusicBindingSource
+            // 
+            this.tBLMusicBindingSource.DataMember = "TBLMusic";
+            this.tBLMusicBindingSource.DataSource = this.library_DatabaseDataSet9;
+            // 
+            // library_DatabaseDataSet9
+            // 
+            this.library_DatabaseDataSet9.DataSetName = "Library_DatabaseDataSet9";
+            this.library_DatabaseDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_edit_movie
             // 
@@ -61,6 +132,7 @@
             this.btn_edit_movie.TabIndex = 22;
             this.btn_edit_movie.Text = "ویرایش کردن";
             this.btn_edit_movie.UseVisualStyleBackColor = true;
+            this.btn_edit_movie.Click += new System.EventHandler(this.btn_edit_movie_Click);
             // 
             // lbl_movie_d
             // 
@@ -143,6 +215,10 @@
             this.txtbox_edit_mmt.Size = new System.Drawing.Size(289, 22);
             this.txtbox_edit_mmt.TabIndex = 12;
             // 
+            // tBLMusicTableAdapter
+            // 
+            this.tBLMusicTableAdapter.ClearBeforeFill = true;
+            // 
             // music_edit_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,7 +241,10 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "ویرایش موسیقی";
+            this.Load += new System.EventHandler(this.music_edit_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_music)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLMusicBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +264,14 @@
         private System.Windows.Forms.TextBox txtbox_edit_maw;
         private System.Windows.Forms.TextBox txtbox_edit_movied;
         private System.Windows.Forms.TextBox txtbox_edit_mmt;
+        private Library_DatabaseDataSet9 library_DatabaseDataSet9;
+        private System.Windows.Forms.BindingSource tBLMusicBindingSource;
+        private Library_DatabaseDataSet9TableAdapters.TBLMusicTableAdapter tBLMusicTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn musictitleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn musicartistDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn albumnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn musicdescriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn musicawardsDataGridViewTextBoxColumn;
     }
 }
