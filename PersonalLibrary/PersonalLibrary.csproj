@@ -122,6 +122,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Library_DatabaseDataSet12.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Library_DatabaseDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library_DatabaseDataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Library_DatabaseDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -326,6 +331,17 @@
     </None>
     <None Include="Library_DatabaseDataSet12.xss">
       <DependentUpon>Library_DatabaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet13.xsc">
+      <DependentUpon>Library_DatabaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Library_DatabaseDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Library_DatabaseDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Library_DatabaseDataSet13.xss">
+      <DependentUpon>Library_DatabaseDataSet13.xsd</DependentUpon>
     </None>
     <None Include="Library_DatabaseDataSet2.xsc">
       <DependentUpon>Library_DatabaseDataSet2.xsd</DependentUpon>

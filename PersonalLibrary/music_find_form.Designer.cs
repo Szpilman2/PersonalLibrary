@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(music_find_form));
             this.lbl_findmusic = new System.Windows.Forms.Label();
             this.txtbox_find_music = new System.Windows.Forms.TextBox();
-            this.btn_mfind = new System.Windows.Forms.Button();
             this.dataGridView_music_find = new System.Windows.Forms.DataGridView();
             this.library_DatabaseDataSet12 = new PersonalLibrary.Library_DatabaseDataSet12();
             this.tBLMusicBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -66,15 +65,6 @@
             this.txtbox_find_music.Size = new System.Drawing.Size(252, 22);
             this.txtbox_find_music.TabIndex = 4;
             this.txtbox_find_music.TextChanged += new System.EventHandler(this.txtbox_find_music_TextChanged);
-            // 
-            // btn_mfind
-            // 
-            this.btn_mfind.Location = new System.Drawing.Point(69, 432);
-            this.btn_mfind.Name = "btn_mfind";
-            this.btn_mfind.Size = new System.Drawing.Size(115, 31);
-            this.btn_mfind.TabIndex = 3;
-            this.btn_mfind.Text = "جستجو کردن";
-            this.btn_mfind.UseVisualStyleBackColor = true;
             // 
             // dataGridView_music_find
             // 
@@ -167,7 +157,6 @@
             this.Controls.Add(this.dataGridView_music_find);
             this.Controls.Add(this.lbl_findmusic);
             this.Controls.Add(this.txtbox_find_music);
-            this.Controls.Add(this.btn_mfind);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "music_find_form";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -186,7 +175,6 @@
 
         private System.Windows.Forms.Label lbl_findmusic;
         private System.Windows.Forms.TextBox txtbox_find_music;
-        private System.Windows.Forms.Button btn_mfind;
         private System.Windows.Forms.DataGridView dataGridView_music_find;
         private Library_DatabaseDataSet12 library_DatabaseDataSet12;
         private System.Windows.Forms.BindingSource tBLMusicBindingSource;

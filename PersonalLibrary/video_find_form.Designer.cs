@@ -32,11 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(video_find_form));
             this.lbl_find_movie = new System.Windows.Forms.Label();
             this.textBox_find_movie = new System.Windows.Forms.TextBox();
-            this.btn_movie_find = new System.Windows.Forms.Button();
             this.dataGridView_movie_find = new System.Windows.Forms.DataGridView();
-            this.library_DatabaseDataSet11 = new PersonalLibrary.Library_DatabaseDataSet11();
-            this.tBLVideoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tBLVideoTableAdapter = new PersonalLibrary.Library_DatabaseDataSet11TableAdapters.TBLVideoTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.videotitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.videogenreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,9 +41,12 @@
             this.videodescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.videoawardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.videostatusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tBLVideoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.library_DatabaseDataSet11 = new PersonalLibrary.Library_DatabaseDataSet11();
+            this.tBLVideoTableAdapter = new PersonalLibrary.Library_DatabaseDataSet11TableAdapters.TBLVideoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_movie_find)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLVideoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_find_movie
@@ -66,15 +65,6 @@
             this.textBox_find_movie.Size = new System.Drawing.Size(252, 22);
             this.textBox_find_movie.TabIndex = 4;
             this.textBox_find_movie.TextChanged += new System.EventHandler(this.textBox_find_movie_TextChanged);
-            // 
-            // btn_movie_find
-            // 
-            this.btn_movie_find.Location = new System.Drawing.Point(75, 432);
-            this.btn_movie_find.Name = "btn_movie_find";
-            this.btn_movie_find.Size = new System.Drawing.Size(115, 31);
-            this.btn_movie_find.TabIndex = 3;
-            this.btn_movie_find.Text = "جستجو کردن";
-            this.btn_movie_find.UseVisualStyleBackColor = true;
             // 
             // dataGridView_movie_find
             // 
@@ -95,20 +85,6 @@
             this.dataGridView_movie_find.RowTemplate.Height = 24;
             this.dataGridView_movie_find.Size = new System.Drawing.Size(651, 399);
             this.dataGridView_movie_find.TabIndex = 6;
-            // 
-            // library_DatabaseDataSet11
-            // 
-            this.library_DatabaseDataSet11.DataSetName = "Library_DatabaseDataSet11";
-            this.library_DatabaseDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tBLVideoBindingSource
-            // 
-            this.tBLVideoBindingSource.DataMember = "TBLVideo";
-            this.tBLVideoBindingSource.DataSource = this.library_DatabaseDataSet11;
-            // 
-            // tBLVideoTableAdapter
-            // 
-            this.tBLVideoTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -159,6 +135,20 @@
             this.videostatusDataGridViewCheckBoxColumn.HeaderText = "video_status";
             this.videostatusDataGridViewCheckBoxColumn.Name = "videostatusDataGridViewCheckBoxColumn";
             // 
+            // tBLVideoBindingSource
+            // 
+            this.tBLVideoBindingSource.DataMember = "TBLVideo";
+            this.tBLVideoBindingSource.DataSource = this.library_DatabaseDataSet11;
+            // 
+            // library_DatabaseDataSet11
+            // 
+            this.library_DatabaseDataSet11.DataSetName = "Library_DatabaseDataSet11";
+            this.library_DatabaseDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tBLVideoTableAdapter
+            // 
+            this.tBLVideoTableAdapter.ClearBeforeFill = true;
+            // 
             // video_find_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -167,7 +157,6 @@
             this.Controls.Add(this.dataGridView_movie_find);
             this.Controls.Add(this.lbl_find_movie);
             this.Controls.Add(this.textBox_find_movie);
-            this.Controls.Add(this.btn_movie_find);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "video_find_form";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -175,8 +164,8 @@
             this.Text = "جستجوی فیلم";
             this.Load += new System.EventHandler(this.video_find_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_movie_find)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLVideoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.library_DatabaseDataSet11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +175,6 @@
 
         private System.Windows.Forms.Label lbl_find_movie;
         private System.Windows.Forms.TextBox textBox_find_movie;
-        private System.Windows.Forms.Button btn_movie_find;
         private System.Windows.Forms.DataGridView dataGridView_movie_find;
         private Library_DatabaseDataSet11 library_DatabaseDataSet11;
         private System.Windows.Forms.BindingSource tBLVideoBindingSource;
